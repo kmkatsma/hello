@@ -1,5 +1,0 @@
-{
-    "go.formatTool": "gofmt",
-    "go.lintOnSave": true,
-    "go.gopath": "c:/work"
-}

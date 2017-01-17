@@ -4,20 +4,46 @@ import (
 	"fmt"
 	"math"
 
+	"github.com/kataras/iris"
 	"github.com/kmkatsma/hello/models"
 	"github.com/kmkatsma/hello/os"
+	"github.com/kmkatsma/hello/products"
 )
 
 func main() {
-	fmt.Printf("hello, world\n")
-	fmt.Println(sqrt(2), sqrt(-4))
 
 	i := os.NewWrapper()
 	i.RunsOnWindows()
 
-	counting()
+	// http://localhost:5700/api/user/42
+	// Method: "GET"
+	iris.Get("/api/user/:id", func(ctx *iris.Context) {
 
-	pointers()
+		// take the :id from the path, parse to integer
+		// and set it to the new userID local variable.
+		userID, _ := ctx.ParamInt("id")
+
+		user := iris.Map{"username": "Joe", "userid": userID}
+		// userRepo, imaginary database service <- your only job.
+		//user := userRepo.GetByID(userID)
+
+		// send back a response to the client,
+		// .JSON: content type as application/json; charset="utf-8"
+		// iris.StatusOK: with 200 http status code.
+		//
+		// send user as it is or make use of any json valid golang type,
+		// like the iris.Map{"username" : user.Username}.
+		ctx.JSON(iris.StatusOK, user)
+
+	})
+
+	iris.Get("/products/:id", products.Get)
+	iris.Post("/products", products.Post)
+	//iris.Put("products/:id", editProduct)
+	//iris.Delete("/products/:id", deleteProduct)
+
+	iris.Listen(":8080")
+
 }
 
 func createVertex(n int) {
