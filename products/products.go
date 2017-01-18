@@ -1,6 +1,14 @@
 package products
 
-import "github.com/kataras/iris"
+import (
+	"github.com/labstack/echo"
+	"net/http"
+)
+
+var (
+	products = map[string]*Product{}
+	seq      = 1
+)
 
 //Product is the representation of a product.
 type Product struct {
@@ -8,26 +16,23 @@ type Product struct {
 	ProductID   string `json:"productId"`
 }
 
-//Controller is an interface to represent a controller that handles requests.
-type Controller interface {
-	Get(*iris.Context)
-	Post(*iris.Context)
-}
-
 //Get returns a product based on id.
-func Get(ctx *iris.Context) {
+func Get(ctx echo.Context) error {
 	// Get id from path '/products/:id'
 	id := ctx.Param("id")
-	p := Product{"test", id}
-	ctx.JSON(iris.StatusOK, p)
+	if p, ok := products[id]; ok {
+		return ctx.JSON(http.StatusOK, p)
+	}
+	return ctx.NoContent(http.StatusNotFound)
+
 }
 
 //Post creates a product.
-func Post(ctx *iris.Context) {
+func Post(ctx echo.Context) error {
 	p := new(Product)
-	if err := ctx.ReadJSON(p); err != nil {
-		ctx.EmitError(iris.StatusBadRequest)
-		return
+	if err := ctx.Bind(p); err != nil {
+		return err
 	}
-	ctx.JSON(iris.StatusCreated, p)
+	products[p.ProductID] = p
+	return ctx.JSON(http.StatusCreated, p)
 }

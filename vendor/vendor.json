@@ -1,0 +1,121 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "FhQtBYq3/nSeuhKzWoHw26fkzng=",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "8ee79997227bf9b34611aee7946ae64735e6fd93",
+			"revisionTime": "2016-11-17T03:31:26Z"
+		},
+		{
+			"checksumSHA1": "aaVz2ceA502nyVnoYJWx+6ezAuc=",
+			"path": "github.com/kataras/cli",
+			"revision": "5391185b20613692b38657bdb55e1896d506299d",
+			"revisionTime": "2016-10-22T05:19:37Z"
+		},
+		{
+			"checksumSHA1": "DkDVfKF8C9T1vuYtxRT2AJHtDu0=",
+			"path": "github.com/kataras/rizla/rizla",
+			"revision": "cf55c8547a3ff173614cd89b5f216ab2c8468a94",
+			"revisionTime": "2016-10-31T06:35:59Z"
+		},
+		{
+			"checksumSHA1": "Xe1H36zS96+8urk4a0bYdNY3mnw=",
+			"path": "github.com/mattn/go-isatty",
+			"revision": "30a891c33c7cde7b02a981314b4228ec99380cca",
+			"revisionTime": "2016-11-23T14:36:37Z"
+		},
+		{
+			"checksumSHA1": "xbp8j2KLXQ34tAjnM+zrzMZZKcE=",
+			"path": "golang.org/x/oauth2",
+			"revision": "314dd2c0bf3ebd592ec0d20847d27e79d0dbe8dd",
+			"revisionTime": "2016-12-14T09:25:55Z"
+		},
+		{
+			"checksumSHA1": "P4/BUfTKDPNiXK+dTtf0vzQ3inQ=",
+			"path": "golang.org/x/oauth2/internal",
+			"revision": "314dd2c0bf3ebd592ec0d20847d27e79d0dbe8dd",
+			"revisionTime": "2016-12-14T09:25:55Z"
+		},
+		{
+			"checksumSHA1": "YMrLfSLSCrxjNIlHiU3Mf4piPlA=",
+			"path": "google.golang.org/appengine",
+			"revision": "9e2ad0873f358c54296ccdc5116b0652c98226d1",
+			"revisionTime": "2017-01-13T18:23:11Z"
+		},
+		{
+			"checksumSHA1": "JMeQh8HLS5X5ujmM5AXn0dWRsFg=",
+			"path": "google.golang.org/appengine/internal",
+			"revision": "9e2ad0873f358c54296ccdc5116b0652c98226d1",
+			"revisionTime": "2017-01-13T18:23:11Z"
+		},
+		{
+			"checksumSHA1": "s5WVj1oVSyiaKYgOQGVvmitnfro=",
+			"path": "google.golang.org/appengine/internal/app_identity",
+			"revision": "9e2ad0873f358c54296ccdc5116b0652c98226d1",
+			"revisionTime": "2017-01-13T18:23:11Z"
+		},
+		{
+			"checksumSHA1": "RD2tuuDmEYtQdNm5844fOVPBVkA=",
+			"path": "google.golang.org/appengine/internal/base",
+			"revision": "9e2ad0873f358c54296ccdc5116b0652c98226d1",
+			"revisionTime": "2017-01-13T18:23:11Z"
+		},
+		{
+			"checksumSHA1": "6JDEiCxSEIK1Bfo9IWxFly+RXIw=",
+			"path": "google.golang.org/appengine/internal/datastore",
+			"revision": "9e2ad0873f358c54296ccdc5116b0652c98226d1",
+			"revisionTime": "2017-01-13T18:23:11Z"
+		},
+		{
+			"checksumSHA1": "VSjY7WrvJPnBWkC2L7xsO2dWyfc=",
+			"path": "google.golang.org/appengine/internal/log",
+			"revision": "9e2ad0873f358c54296ccdc5116b0652c98226d1",
+			"revisionTime": "2017-01-13T18:23:11Z"
+		},
+		{
+			"checksumSHA1": "waY+m4VZTQiw87/t1ktZkfeRGRM=",
+			"path": "google.golang.org/appengine/internal/modules",
+			"revision": "9e2ad0873f358c54296ccdc5116b0652c98226d1",
+			"revisionTime": "2017-01-13T18:23:11Z"
+		},
+		{
+			"checksumSHA1": "WE74DpnexU2S0ZTtnwFEPKzlJfI=",
+			"path": "google.golang.org/appengine/internal/remote_api",
+			"revision": "9e2ad0873f358c54296ccdc5116b0652c98226d1",
+			"revisionTime": "2017-01-13T18:23:11Z"
+		},
+		{
+			"checksumSHA1": "UNZNiUKpkvGKzBrYsdjUx7cUM5g=",
+			"path": "google.golang.org/appengine/internal/urlfetch",
+			"revision": "9e2ad0873f358c54296ccdc5116b0652c98226d1",
+			"revisionTime": "2017-01-13T18:23:11Z"
+		},
+		{
+			"checksumSHA1": "k2vHVgCk1AqIZravw4ZP3NbiRJM=",
+			"path": "google.golang.org/appengine/urlfetch",
+			"revision": "9e2ad0873f358c54296ccdc5116b0652c98226d1",
+			"revisionTime": "2017-01-13T18:23:11Z"
+		},
+		{
+			"checksumSHA1": "Zy8hkSmdxCKdZ6dIGbuXMhHYGXI=",
+			"path": "gopkg.in/square/go-jose.v1",
+			"revision": "aa2e30fdd1fe9dd3394119af66451ae790d50e0d",
+			"revisionTime": "2016-09-23T00:08:11Z"
+		},
+		{
+			"checksumSHA1": "/dRfGGXOBNCX3kENt78DR4P0f5Y=",
+			"path": "gopkg.in/square/go-jose.v1/cipher",
+			"revision": "aa2e30fdd1fe9dd3394119af66451ae790d50e0d",
+			"revisionTime": "2016-09-23T00:08:11Z"
+		},
+		{
+			"checksumSHA1": "S4ZzN56mVY9c5qAVJ8zEEY7auPo=",
+			"path": "gopkg.in/square/go-jose.v1/json",
+			"revision": "aa2e30fdd1fe9dd3394119af66451ae790d50e0d",
+			"revisionTime": "2016-09-23T00:08:11Z"
+		}
+	],
+	"rootPath": "github.com/kmkatsma/hello"
+}

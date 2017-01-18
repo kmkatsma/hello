@@ -1,3 +1,4 @@
-runtime: go
+runtime: custom
 env: flex
 api_version: 1
+enable_health_check: False
